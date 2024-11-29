@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarkSheet</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-sky-500 flex justify-center items-center h-screen">
+    <div class="w-[360px] bg-slate-200 border border-black rounded-md shadow-lg shadow-black h-full text-center sm:">
+        <div class="">
+      <label class="text-lg font-medium" for="totalofphy">
+        Total Number Of Physics:
+        <input
+          class="border border-black rounded mb-3 p-1"
+          type="text"
+          id="totalofphy"
+        />
+      </label>
+      <br />
+      <label class="text-lg font-medium" for="obtofphy">
+        Obtained Number Of Physics:
+        <input
+          class="border border-black rounded mb-3 p-1"
+          type="number"
+          id="obtofphy"
+        />
+      </label>
+      <br />
+      <label class="text-lg font-medium" for="totalofche">
+        Total Number Of Chemistry:
+        <input
+          class="border border-black rounded mb-3 p-1"
+          type="number"
+          id="totalofche"
+        />
+      </label>
+      <br />
+      <label class="text-lg font-medium" for="obtofche">
+        Obtained Number Of Chemistry:
+        <input
+          class="border border-black rounded mb-3 p-1"
+          type="number"
+          id="obtofche"
+        />
+      </label>
+      <br />
+      <label class="text-lg font-medium" for="totalofmath">
+        Total Number Of Math:
+        <input
+          class="border border-black rounded mb-3 p-1"
+          type="number"
+          id="totalofmath"
+        />
+      </label>
+      <br />
+      <label class="text-lg font-medium" for="obtofmath">
+        Obtained Number Of Math:
+        <input
+          class="border border-black rounded mb-3 p-1"
+          type="number"
+          id="obtofmath"
+        />
+      </label>
+      </div>
+      <br />
+      <div class="mt-1 mb-6 ">
+      <button class="border border-black rounded pl-5 pr-5 shadow-md shadow-red-700 bg-red-500 hover:bg-red-600 text-lg hover:font-bold font-semibold" onclick="result()">Result</button>
+    </div>
+      
+      <div class="flex justify-center items-center overflow-auto">
+        <table class="border border-solid border-black text-center">
+          <tr class="border border-solid border-black">
+            <th class="border border-solid border-black">Subjects</th>
+            <th class="border border-solid border-black" id="totalMarks">Total Mark</th>
+            <th class="border border-solid border-black" id="obtnainedMarks">Obtained Mark</th>
+            <th class="border border-solid border-black" id="percentage">Percentage</th>
+            <th class="border border-solid border-black" id="gade">Grade</th>
+          </tr>
+          <tr class="border border-solid border-black">
+            <th class="border border-solid border-black">Physics</th>
+            <td class="border border-solid border-black" id="phyTotal"></td>
+            <td class="border border-solid border-black" id="phyObtained"></td>
+            <td class="border border-solid border-black" id="phyPercentage"></td>
+            <td class="border border-solid border-black" id="phyGrade"></td>
+          </tr>
+          <tr class="border border-solid border-black">
+            <th class="border border-solid border-black">Chemistry</th>
+            <td class="border border-solid border-black" id="cheTotal"></td>
+            <td class="border border-solid border-black" id="cheObtained"></td>
+            <td class="border border-solid border-black" id="chePercentage"></td>
+            <td class="border border-solid border-black" id="cheGrade"></td>
+          </tr>
+          <tr class="border border-solid border-black">
+            <th class="border border-solid border-black">Math</th>
+            <td class="border border-solid border-black" id="mathTotal"></td>
+            <td class="border border-solid border-black" id="mathObtained"></td>
+            <td class="border border-solid border-black" id="mathPercentage"></td>
+            <td class="border border-solid border-black" id="mathGrade"></td>
+          </tr>
+          <tr class="border border-solid border-black">
+            <th class="border border-solid border-black">Over All</th>
+            <td class="border border-solid border-black" id="allTotal"></td>
+            <td class="border border-solid border-black" id="allObtained"></td>
+            <td class="border border-solid border-black" id="allPercentage"></td>
+            <td class="border border-solid border-black" id="allGrade"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
